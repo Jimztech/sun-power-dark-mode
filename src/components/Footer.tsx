@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -16,17 +16,24 @@ const Footer: React.FC = () => {
               Providing reliable solar solutions for homes and businesses since 2010.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-solar-green transition-colors">
+              <a 
+                href="https://www.facebook.com/share/1AHZirfYYE/?mibextid=LQQJ4d" 
+                className="text-gray-400 hover:text-solar-green transition-colors"
+                target='blank'
+              >
                 <Facebook />
               </a>
-              <a href="#" className="text-gray-400 hover:text-solar-green transition-colors">
+              <a 
+                href=" https://x.com/oluebube98?s=11" 
+                className="text-gray-400 hover:text-solar-green transition-colors"
+                target='blank'
+              >
                 <Twitter />
               </a>
-              <a href="#" className="text-gray-400 hover:text-solar-green transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-400 hover:text-solar-green transition-colors">
                 <Instagram />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-solar-green transition-colors">
-                <Linkedin />
               </a>
             </div>
           </div>
