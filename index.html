@@ -18,12 +18,315 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
-
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h2>SolarPower<span class="green">Solutions</span></h2>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#problem">Problem</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="nav-btn">Contact Us</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="animate-fade-in">Say Goodbye to Power Outages with Reliable Solar Solutions</h1>
+          <p class="animate-fade-in">Power your lights, fans, freezer, and more—no stress, no interruptions!</p>
+          <div class="hero-cta animate-fade-in">
+            <a href="#pricing" class="btn btn-primary">Choose Your Plan Now</a>
+            <span class="trust-badge">
+              <i class="fas fa-shield-alt"></i>
+              25+ Years Durability
+            </span>
+          </div>
+        </div>
+        <div class="hero-image animate-float">
+          <img src="/lovable-uploads/a00d0738-4ab9-43c3-8415-5c9c686d3cda.png" alt="Happy family using solar power">
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+      <div class="container">
+        <div class="problem-content">
+          <h2>Tired of Power Outages?</h2>
+          <p>No electricity for days, spoiling your food, leaving you in the dark. We understand how frustrating that can be!</p>
+        </div>
+        <div class="problem-image">
+          <img src="/lovable-uploads/5e5d2fb9-3f74-4867-b7b0-1534a9ce6a42.png" alt="Family during power outage">
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section-padding">
+      <div class="container">
+        <h2>Choose the Plan That Fits Your Needs</h2>
+        
+        <div class="pricing-cards">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3>Basic Plan</h3>
+              <div class="price">$1,200</div>
+            </div>
+            <div class="card-content">
+              <ul class="features">
+                <li><i class="fas fa-solar-panel"></i> 300W panel</li>
+                <li><i class="fas fa-battery-full"></i> 500Wh power station</li>
+                <li><i class="fas fa-plug"></i> 1,000W inverter</li>
+                <li><i class="fas fa-shield-alt"></i> 5-year warranty</li>
+                <li><i class="fas fa-tools"></i> Installation included</li>
+              </ul>
+              <div class="usage">
+                <h4>Powers:</h4>
+                <ul>
+                  <li><i class="fas fa-lightbulb"></i> 6 hours of light (2 bulbs)</li>
+                  <li><i class="fas fa-fan"></i> 4 hours of a small fan</li>
+                  <li><i class="fas fa-mobile-alt"></i> Charges a phone overnight</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-secondary">Get Started</a>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="pricing-card featured">
+            <div class="popular-tag">Popular</div>
+            <div class="card-header">
+              <h3>Standard Plan</h3>
+              <div class="price">$3,000</div>
+            </div>
+            <div class="card-content">
+              <ul class="features">
+                <li><i class="fas fa-solar-panel"></i> 500W panel</li>
+                <li><i class="fas fa-battery-full"></i> 1,500Wh power station</li>
+                <li><i class="fas fa-plug"></i> 2,000W inverter</li>
+                <li><i class="fas fa-shield-alt"></i> 10-year warranty</li>
+                <li><i class="fas fa-tools"></i> 1-year maintenance</li>
+                <li><i class="fas fa-home"></i> Installation included</li>
+              </ul>
+              <div class="usage">
+                <h4>Powers:</h4>
+                <ul>
+                  <li><i class="fas fa-box"></i> Medium freezer for 8 hours</li>
+                  <li><i class="fas fa-fan"></i> 2 fans and 1 bulb for 10 hours</li>
+                  <li><i class="fas fa-laptop"></i> Charges a laptop all day</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card">
+            <div class="card-header">
+              <h3>Premium Plan</h3>
+              <div class="price">$6,500</div>
+            </div>
+            <div class="card-content">
+              <ul class="features">
+                <li><i class="fas fa-solar-panel"></i> 800W panel</li>
+                <li><i class="fas fa-battery-full"></i> 3,000Wh power station</li>
+                <li><i class="fas fa-plug"></i> 5,000W inverter</li>
+                <li><i class="fas fa-shield-alt"></i> 25-year warranty</li>
+                <li><i class="fas fa-headset"></i> 24/7 support</li>
+                <li><i class="fas fa-expand-arrows-alt"></i> Scalable</li>
+                <li><i class="fas fa-tools"></i> Installation included</li>
+              </ul>
+              <div class="usage">
+                <h4>Powers:</h4>
+                <ul>
+                  <li><i class="fas fa-refrigerator"></i> Large fridge running 12+ hours</li>
+                  <li><i class="fas fa-fan"></i> Powers 3 fans</li>
+                  <li><i class="fas fa-lightbulb"></i> 4 bulbs</li>
+                  <li><i class="fas fa-mobile-alt"></i> Charges multiple devices</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-secondary">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us section-padding">
+      <div class="container">
+        <h2>Why Choose Our Solar Solutions?</h2>
+        
+        <div class="why-us-container">
+          <div class="why-us-content">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-text">
+                <h3>Built to Last</h3>
+                <p>Panels work for over 25 years!</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="feature-text">
+                <h3>We Handle Installation</h3>
+                <p>No hassle for you.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div class="feature-text">
+                <h3>Support Available</h3>
+                <p>Contact us anytime (Premium includes 24/7 support).</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="why-us-image">
+            <img src="/lovable-uploads/88ae13c5-5d2b-4677-9504-866f6cec2c3c.png" alt="Installed solar panels">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-padding">
+      <div class="container">
+        <h2>Have Questions? We Have Answers!</h2>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long will the system last, and what happens if it breaks?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Our solar systems are designed to last 25+ years with proper maintenance. All plans come with warranties (5, 10, or 25 years depending on your plan). If anything breaks during the warranty period, we'll repair or replace it at no additional cost. Premium plan users get priority service with 24/7 support.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What if I need more power later—can I upgrade?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! All our systems are designed to be expandable. You can add more panels, increase battery capacity, or upgrade your inverter as your needs grow. The Premium plan is especially designed for scalability with minimal additional costs.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How does weather affect my solar system's performance?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>While solar panels work best on sunny days, they still generate electricity on cloudy days—about 10-25% of normal production. Our battery storage systems ensure you have power even after several days of limited sunlight. Our solutions are designed for your local weather patterns to ensure reliability year-round.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does it take to get my solar system installed?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Basic and Standard installations typically take 1-2 days once we have all equipment on site. Premium installations may take 2-3 days due to the larger system size. From order to installation, expect 1-3 weeks depending on current demand and your location. We'll provide a specific timeline when you place your order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta section-padding">
+      <div class="container">
+        <div class="cta-container">
+          <div class="cta-content">
+            <h2>Ready to Enjoy Uninterrupted Power?</h2>
+            <p>Pick your plan today—installation is included!</p>
+            <a href="#pricing" class="btn btn-primary">Get Your Solar Now!</a>
+          </div>
+          <div class="cta-image">
+            <img src="/lovable-uploads/a7051165-2785-46b2-ac88-1e112892b5b8.png" alt="Home with solar panels">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>SolarPower<span class="green">Solutions</span></h3>
+            <p>Reliable solar energy for your home</p>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#problem">Problem</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone"></i> Call us: (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> Email: info@solarpowersolutions.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 SolarPower Solutions. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
   </body>
 </html>
